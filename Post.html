@@ -10,66 +10,80 @@
 </head>
 <body>
 
-    <container>
-        <div class="d-flex bg-light p-3">
-            <div class="p-2 flex-grow-1 col-1">
-                <span class="fa-brands fa-instagram fa-2xl"></span><h3 class="d-inline align-bottom p-2">instagram</h3>
-            </div>
-            <div class="p-2">
-                <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .35rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+                    <span class="fa-brands fa-instagram fa-2xl"></span>
+                    <a class="navbar-brand p-1" href="#">Instagram</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button type="button" class="btn btn-success ms-auto m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            
                         <div class="modal-body">
                             <form>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Caption:</label>
-                                <textarea class="form-control text text-secondary" id="message-text">Add the caption of your post here.</textarea>
                                 <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">
-                                        <button type="button" class="btn btn-outline-dark">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-dark">
-                                            <i class="fa-solid fa-camera"></i>
-                                        </button>
-                                         
-                                    </label>
-                                  </div>
-                                
-                            </div>
+                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                    <textarea class="form-control text text-secondary"
+                                        id="message-text">Add the caption of your post here.</textarea>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">
+                                            <button type="button" class="btn btn-outline-dark">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-dark">
+                                                <i class="fa-solid fa-camera"></i>
+                                            </button>
+    
+                                        </label>
+                                    </div>
+    
+                                </div>
                             </form>
                         </div>
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Publish</button>
+                             <button type="button" class="btn btn-success">Publish</button>
                         </div>
-                        </div>
+
                     </div>
+                </div>
+            </div>
+
+
+
+                    <div class="dropdown-center me-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu  dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text text-danger" href="#">Log out</a></li>
+                        </ul>
                     </div>
+    
+                </div>
             </div>
-            <div class="p-2">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="fa-solid fa-gear"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text text-danger" href="#">Log out</a></li>
-                    </ul>
-                  </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </container>
+        </nav>
 
     <div class="container">
         <div class="d-flex justify-content-center p-3">
